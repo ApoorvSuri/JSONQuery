@@ -2,11 +2,11 @@
 //  JSONQuery.h
 //  JSONQuery
 //
-//  Created by Apoorv Suri on 01/08/17.
-//  Copyright © 2017 ASCorp. All rights reserved.
+//  Created by Apoorv Suri on 09/12/19.
+//  Copyright © 2019 Apoorv Suri. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for JSONQuery.
 FOUNDATION_EXPORT double JSONQueryVersionNumber;

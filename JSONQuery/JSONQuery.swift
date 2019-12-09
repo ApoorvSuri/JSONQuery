@@ -7,12 +7,12 @@ import UIKit
 /**
 Tool used for API calls
  */
-struct JSONQuery {
+public struct JSONQuery {
     
     //MARK: SUCCESS & FAILURE CLOSURES
     
-    internal typealias WebServiceSuccess = (_ json : Any?) -> Void
-    internal typealias WebServiceFailure = (_ error : Error? , _ data : Any?) -> Void
+    public typealias WebServiceSuccess = (_ json : Any?) -> Void
+    public typealias WebServiceFailure = (_ error : Error? , _ data : Any?) -> Void
     
     //MARK: TIME-OUT INTERVAL
 
@@ -20,17 +20,19 @@ struct JSONQuery {
         return 60
     }
     
-    enum queryType : String {
+    public enum queryType : String {
         case get = "GET"
         case post = "POST"
         case put = "PUT"
         case delete = "DELETE"
     }
     
-    enum httpHeaderField : String {
+    public enum httpHeaderField : String {
         case contentType = "Content-Type"
         case accept = "Accept"
     }
+    
+    public init(){}
     
     /**
      METHOD #1 : Use this method for basic API calls like GET , POST , PUT , DELETE
@@ -66,7 +68,6 @@ struct JSONQuery {
         , successBlock : @escaping WebServiceSuccess
         , failureBlock : @escaping WebServiceFailure){
         
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let configuration  = URLSessionConfiguration.default
         
         let session : URLSession = URLSession.init(configuration: configuration
@@ -93,9 +94,7 @@ struct JSONQuery {
         , headers : Dictionary < String , Any >
         , successBlock : @escaping WebServiceSuccess
         , failureBlock : @escaping WebServiceFailure){
-        
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        
+                
         let url = URL.init(string: urlString)
         
         var urlRequest = URLRequest.init(url: url!
@@ -120,7 +119,7 @@ struct JSONQuery {
                 let json = try JSONSerialization.data(withJSONObject: parameters ?? [:], options: .prettyPrinted)
                 urlRequest.httpBody = json
             } catch let error {
-                Debug.debugPrint(items: "#Warning : JSONQuery - Error Attaching Parameters \(error.localizedDescription)")
+                debugPrint("#Warning : JSONQuery - Error Attaching Parameters \(error.localizedDescription)")
             }
         }
         
@@ -158,8 +157,6 @@ struct JSONQuery {
         , successBlock : @escaping WebServiceSuccess
         , failureBlock : @escaping WebServiceFailure){
         
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-
         if response != nil {
             let statusCode = (response as! HTTPURLResponse).statusCode
             
@@ -183,7 +180,8 @@ struct JSONQuery {
                             }
                         } else {
                             DispatchQueue.main.async {
-                                successBlock(parsedData)
+                                let nullRemovedData = JSONQuery.removeNullFromJSONData(parsedData)
+                                successBlock(nullRemovedData)
                             }
                         }
                     }
@@ -193,10 +191,55 @@ struct JSONQuery {
             } else if error != nil {
                 failureBlock(error , nil)
             } else {
-                Debug.debugPrint(items: "#Warning : Bad Response \(String(describing: error?.localizedDescription))")
+                debugPrint("#Warning : Bad Response \(String(describing: error?.localizedDescription))")
             }
         } else {
             failureBlock(error,nil)
+        }
+    }
+    
+    static func removeNullFromJSONData(_ JSONData: Any) -> Any {
+        if JSONData as? NSNull != nil {
+            return JSONData
+        }
+        var JSONObject: Any!
+
+        if JSONData as? NSData != nil {
+            JSONObject = try! JSONSerialization.data(withJSONObject: JSONData, options: JSONSerialization.WritingOptions.prettyPrinted)
+        } else {
+            JSONObject = JSONData
+        }
+
+        if JSONObject as? NSArray != nil {
+            let mutableArray: NSMutableArray = NSMutableArray(array: JSONObject as! [Any], copyItems: true)
+            let indexesToRemove: NSMutableIndexSet = NSMutableIndexSet()
+            for index in 0 ..< mutableArray.count {
+                let indexObject: Any = mutableArray[index]
+                if indexObject as? NSNull != nil {
+                    indexesToRemove.add(index)
+                } else {
+                    mutableArray.replaceObject(at: index, with: removeNullFromJSONData(indexObject))
+                }
+            }
+            mutableArray.removeObjects(at: indexesToRemove as IndexSet)
+            return mutableArray
+            
+        } else if JSONObject as? NSDictionary != nil {
+            let mutableDictionary: NSMutableDictionary = NSMutableDictionary(dictionary: JSONObject as! [AnyHashable : Any], copyItems: true)
+
+            for key in mutableDictionary.allKeys {
+                let indexObject: Any = mutableDictionary[key] as Any
+
+                if indexObject as? NSNull != nil {
+                    mutableDictionary.removeObject(forKey: key)
+                }
+                else {
+                    mutableDictionary.setObject(removeNullFromJSONData(indexObject), forKey: key as! NSCopying)
+                }
+            }
+            return mutableDictionary
+        } else {
+            return JSONObject as Any
         }
     }
     
@@ -242,15 +285,5 @@ struct JSONQuery {
         }
         uploadData.append("\r\n--\(boundaryConstant)--\r\n".data(using: String.Encoding.utf8)!)
         return (mutableURLRequest as URLRequest, uploadData as Data)
-    }
-}
-
-
-/**
- Use this class for all the operations related to debugging
- */
-struct Debug {
-    static func debugPrint(items : Any) {
-        print(items)
     }
 }

@@ -1,18 +1,16 @@
 //
-//  NetData.swift
-//  ROVO
+//  Multimedia.swift
+//  JSONQuery
 //
-//  Created by Anupam Katiyar on 29/07/16.
+//  Created by Apoorv Suri on 29/07/16.
 //  Copyright © 2016 Apoorv Suri. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class Multimedia {
-    
-    enum MimeType: String {
-        
+public class Multimedia {
+    public enum MimeType: String {
         case ImageJpeg = "image/jpeg"
         case ImagePng = "image/png"
         case ImageGif = "image/gif"
@@ -50,20 +48,20 @@ class Multimedia {
     let mimeType: MimeType!
     let filename: String
     
-    init(data: Data, mimeType: MimeType, filename: String) {
+    public init(data: Data, mimeType: MimeType, filename: String) {
         self.data = data
         self.mimeType = mimeType
         self.filename = filename
     }
     
-    init(pngImage: UIImage, filename: String) {
-        data = UIImagePNGRepresentation(pngImage)! 
+    public init(pngImage: UIImage, filename: String) {
+        data = pngImage.pngData()! 
         self.mimeType = MimeType.ImagePng
         self.filename = filename
     }
     
-    init(jpegImage: UIImage, compressionQuanlity: CGFloat, filename: String) {
-        data = UIImageJPEGRepresentation(jpegImage, compressionQuanlity)!
+    public init(jpegImage: UIImage, compressionQuanlity: CGFloat, filename: String) {
+        data = jpegImage.jpegData(compressionQuality: compressionQuanlity)!
         self.mimeType = MimeType.ImageJpeg
         self.filename = filename
     }
