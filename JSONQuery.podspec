@@ -6,7 +6,7 @@ s.name = "JSONQuery"
 s.summary = "JSONQuery is built on top of URLSession Class for making HTTP Calls"
 s.requires_arc = true
 
-s.version = "0.1.0"
+s.version = "0.1.1"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
