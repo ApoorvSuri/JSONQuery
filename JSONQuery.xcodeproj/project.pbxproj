@@ -7,89 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1B091B3239E829E0083A999 /* JSONQuery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B091A9239E829E0083A999 /* JSONQuery.framework */; };
-		D1B091B8239E829E0083A999 /* JSONQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091B7239E829E0083A999 /* JSONQueryTests.swift */; };
-		D1B091BA239E829E0083A999 /* JSONQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B091AC239E829E0083A999 /* JSONQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1B091C5239E82C00083A999 /* JSONQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091C3239E82C00083A999 /* JSONQuery.swift */; };
-		D1B091C6239E82C00083A999 /* JSONQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091C3239E82C00083A999 /* JSONQuery.swift */; };
-		D1B091C7239E82C00083A999 /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091C4239E82C00083A999 /* Multimedia.swift */; };
-		D1B091C8239E82C00083A999 /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091C4239E82C00083A999 /* Multimedia.swift */; };
+		D1B091DD239E8D7F0083A999 /* JSONQuery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B091D3239E8D7E0083A999 /* JSONQuery.framework */; };
+		D1B091E2239E8D7F0083A999 /* JSONQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091E1239E8D7F0083A999 /* JSONQueryTests.swift */; };
+		D1B091E4239E8D7F0083A999 /* JSONQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B091D6239E8D7E0083A999 /* JSONQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1B091EF239E8D890083A999 /* JSONQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091ED239E8D890083A999 /* JSONQuery.swift */; };
+		D1B091F0239E8D890083A999 /* JSONQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091ED239E8D890083A999 /* JSONQuery.swift */; };
+		D1B091F1239E8D890083A999 /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091EE239E8D890083A999 /* Multimedia.swift */; };
+		D1B091F2239E8D890083A999 /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B091EE239E8D890083A999 /* Multimedia.swift */; };
+		D1B091F4239E8DDD0083A999 /* JSONQuery.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D1B091F3239E8DDD0083A999 /* JSONQuery.podspec */; };
+		D1B091F6239E8DF40083A999 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D1B091F5239E8DF40083A999 /* Podfile */; };
+		D1B091F8239E8E010083A999 /* LICENSE.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D1B091F7239E8E010083A999 /* LICENSE.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D1B091B4239E829E0083A999 /* PBXContainerItemProxy */ = {
+		D1B091DE239E8D7F0083A999 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D1B091A0239E829E0083A999 /* Project object */;
+			containerPortal = D1B091CA239E8D7E0083A999 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D1B091A8239E829E0083A999;
+			remoteGlobalIDString = D1B091D2239E8D7E0083A999;
 			remoteInfo = JSONQuery;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D1B091A9239E829E0083A999 /* JSONQuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONQuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1B091AC239E829E0083A999 /* JSONQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONQuery.h; sourceTree = "<group>"; };
-		D1B091AD239E829E0083A999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1B091B2239E829E0083A999 /* JSONQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1B091B7239E829E0083A999 /* JSONQueryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONQueryTests.swift; sourceTree = "<group>"; };
-		D1B091B9239E829E0083A999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1B091C3239E82C00083A999 /* JSONQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONQuery.swift; sourceTree = "<group>"; };
-		D1B091C4239E82C00083A999 /* Multimedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multimedia.swift; sourceTree = "<group>"; };
+		D1B091D3239E8D7E0083A999 /* JSONQuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONQuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B091D6239E8D7E0083A999 /* JSONQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONQuery.h; sourceTree = "<group>"; };
+		D1B091D7239E8D7E0083A999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B091DC239E8D7F0083A999 /* JSONQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B091E1239E8D7F0083A999 /* JSONQueryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONQueryTests.swift; sourceTree = "<group>"; };
+		D1B091E3239E8D7F0083A999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B091ED239E8D890083A999 /* JSONQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONQuery.swift; sourceTree = "<group>"; };
+		D1B091EE239E8D890083A999 /* Multimedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multimedia.swift; sourceTree = "<group>"; };
+		D1B091F3239E8DDD0083A999 /* JSONQuery.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = JSONQuery.podspec; sourceTree = SOURCE_ROOT; };
+		D1B091F5239E8DF40083A999 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		D1B091F7239E8E010083A999 /* LICENSE.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = LICENSE.rtf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D1B091A6239E829E0083A999 /* Frameworks */ = {
+		D1B091D0239E8D7E0083A999 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1B091AF239E829E0083A999 /* Frameworks */ = {
+		D1B091D9239E8D7F0083A999 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B091B3239E829E0083A999 /* JSONQuery.framework in Frameworks */,
+				D1B091DD239E8D7F0083A999 /* JSONQuery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D1B0919F239E829E0083A999 = {
+		D1B091C9239E8D7E0083A999 = {
 			isa = PBXGroup;
 			children = (
-				D1B091AB239E829E0083A999 /* JSONQuery */,
-				D1B091B6239E829E0083A999 /* JSONQueryTests */,
-				D1B091AA239E829E0083A999 /* Products */,
+				D1B091D5239E8D7E0083A999 /* JSONQuery */,
+				D1B091E0239E8D7F0083A999 /* JSONQueryTests */,
+				D1B091D4239E8D7E0083A999 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D1B091AA239E829E0083A999 /* Products */ = {
+		D1B091D4239E8D7E0083A999 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1B091A9239E829E0083A999 /* JSONQuery.framework */,
-				D1B091B2239E829E0083A999 /* JSONQueryTests.xctest */,
+				D1B091D3239E8D7E0083A999 /* JSONQuery.framework */,
+				D1B091DC239E8D7F0083A999 /* JSONQueryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1B091AB239E829E0083A999 /* JSONQuery */ = {
+		D1B091D5239E8D7E0083A999 /* JSONQuery */ = {
 			isa = PBXGroup;
 			children = (
-				D1B091C3239E82C00083A999 /* JSONQuery.swift */,
-				D1B091C4239E82C00083A999 /* Multimedia.swift */,
-				D1B091AC239E829E0083A999 /* JSONQuery.h */,
-				D1B091AD239E829E0083A999 /* Info.plist */,
+				D1B091F7239E8E010083A999 /* LICENSE.rtf */,
+				D1B091F5239E8DF40083A999 /* Podfile */,
+				D1B091ED239E8D890083A999 /* JSONQuery.swift */,
+				D1B091EE239E8D890083A999 /* Multimedia.swift */,
+				D1B091D6239E8D7E0083A999 /* JSONQuery.h */,
+				D1B091F3239E8DDD0083A999 /* JSONQuery.podspec */,
+				D1B091D7239E8D7E0083A999 /* Info.plist */,
 			);
 			path = JSONQuery;
 			sourceTree = "<group>";
 		};
-		D1B091B6239E829E0083A999 /* JSONQueryTests */ = {
+		D1B091E0239E8D7F0083A999 /* JSONQueryTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1B091B7239E829E0083A999 /* JSONQueryTests.swift */,
-				D1B091B9239E829E0083A999 /* Info.plist */,
+				D1B091E1239E8D7F0083A999 /* JSONQueryTests.swift */,
+				D1B091E3239E8D7F0083A999 /* Info.plist */,
 			);
 			path = JSONQueryTests;
 			sourceTree = "<group>";
@@ -97,25 +106,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D1B091A4239E829E0083A999 /* Headers */ = {
+		D1B091CE239E8D7E0083A999 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B091BA239E829E0083A999 /* JSONQuery.h in Headers */,
+				D1B091E4239E8D7F0083A999 /* JSONQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D1B091A8239E829E0083A999 /* JSONQuery */ = {
+		D1B091D2239E8D7E0083A999 /* JSONQuery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1B091BD239E829E0083A999 /* Build configuration list for PBXNativeTarget "JSONQuery" */;
+			buildConfigurationList = D1B091E7239E8D7F0083A999 /* Build configuration list for PBXNativeTarget "JSONQuery" */;
 			buildPhases = (
-				D1B091A4239E829E0083A999 /* Headers */,
-				D1B091A5239E829E0083A999 /* Sources */,
-				D1B091A6239E829E0083A999 /* Frameworks */,
-				D1B091A7239E829E0083A999 /* Resources */,
+				D1B091CE239E8D7E0083A999 /* Headers */,
+				D1B091CF239E8D7E0083A999 /* Sources */,
+				D1B091D0239E8D7E0083A999 /* Frameworks */,
+				D1B091D1239E8D7E0083A999 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -123,47 +132,47 @@
 			);
 			name = JSONQuery;
 			productName = JSONQuery;
-			productReference = D1B091A9239E829E0083A999 /* JSONQuery.framework */;
+			productReference = D1B091D3239E8D7E0083A999 /* JSONQuery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D1B091B1239E829E0083A999 /* JSONQueryTests */ = {
+		D1B091DB239E8D7F0083A999 /* JSONQueryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1B091C0239E829E0083A999 /* Build configuration list for PBXNativeTarget "JSONQueryTests" */;
+			buildConfigurationList = D1B091EA239E8D7F0083A999 /* Build configuration list for PBXNativeTarget "JSONQueryTests" */;
 			buildPhases = (
-				D1B091AE239E829E0083A999 /* Sources */,
-				D1B091AF239E829E0083A999 /* Frameworks */,
-				D1B091B0239E829E0083A999 /* Resources */,
+				D1B091D8239E8D7F0083A999 /* Sources */,
+				D1B091D9239E8D7F0083A999 /* Frameworks */,
+				D1B091DA239E8D7F0083A999 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D1B091B5239E829E0083A999 /* PBXTargetDependency */,
+				D1B091DF239E8D7F0083A999 /* PBXTargetDependency */,
 			);
 			name = JSONQueryTests;
 			productName = JSONQueryTests;
-			productReference = D1B091B2239E829E0083A999 /* JSONQueryTests.xctest */;
+			productReference = D1B091DC239E8D7F0083A999 /* JSONQueryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D1B091A0239E829E0083A999 /* Project object */ = {
+		D1B091CA239E8D7E0083A999 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Apoorv Suri";
 				TargetAttributes = {
-					D1B091A8239E829E0083A999 = {
+					D1B091D2239E8D7E0083A999 = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
 					};
-					D1B091B1239E829E0083A999 = {
+					D1B091DB239E8D7F0083A999 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D1B091A3239E829E0083A999 /* Build configuration list for PBXProject "JSONQuery" */;
+			buildConfigurationList = D1B091CD239E8D7E0083A999 /* Build configuration list for PBXProject "JSONQuery" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,26 +180,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D1B0919F239E829E0083A999;
-			productRefGroup = D1B091AA239E829E0083A999 /* Products */;
+			mainGroup = D1B091C9239E8D7E0083A999;
+			productRefGroup = D1B091D4239E8D7E0083A999 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1B091A8239E829E0083A999 /* JSONQuery */,
-				D1B091B1239E829E0083A999 /* JSONQueryTests */,
+				D1B091D2239E8D7E0083A999 /* JSONQuery */,
+				D1B091DB239E8D7F0083A999 /* JSONQueryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D1B091A7239E829E0083A999 /* Resources */ = {
+		D1B091D1239E8D7E0083A999 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B091F8239E8E010083A999 /* LICENSE.rtf in Resources */,
+				D1B091F6239E8DF40083A999 /* Podfile in Resources */,
+				D1B091F4239E8DDD0083A999 /* JSONQuery.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1B091B0239E829E0083A999 /* Resources */ = {
+		D1B091DA239E8D7F0083A999 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,37 +212,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D1B091A5239E829E0083A999 /* Sources */ = {
+		D1B091CF239E8D7E0083A999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B091C7239E82C00083A999 /* Multimedia.swift in Sources */,
-				D1B091C5239E82C00083A999 /* JSONQuery.swift in Sources */,
+				D1B091F1239E8D890083A999 /* Multimedia.swift in Sources */,
+				D1B091EF239E8D890083A999 /* JSONQuery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1B091AE239E829E0083A999 /* Sources */ = {
+		D1B091D8239E8D7F0083A999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B091C8239E82C00083A999 /* Multimedia.swift in Sources */,
-				D1B091C6239E82C00083A999 /* JSONQuery.swift in Sources */,
-				D1B091B8239E829E0083A999 /* JSONQueryTests.swift in Sources */,
+				D1B091F2239E8D890083A999 /* Multimedia.swift in Sources */,
+				D1B091F0239E8D890083A999 /* JSONQuery.swift in Sources */,
+				D1B091E2239E8D7F0083A999 /* JSONQueryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D1B091B5239E829E0083A999 /* PBXTargetDependency */ = {
+		D1B091DF239E8D7F0083A999 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D1B091A8239E829E0083A999 /* JSONQuery */;
-			targetProxy = D1B091B4239E829E0083A999 /* PBXContainerItemProxy */;
+			target = D1B091D2239E8D7E0083A999 /* JSONQuery */;
+			targetProxy = D1B091DE239E8D7F0083A999 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D1B091BB239E829E0083A999 /* Debug */ = {
+		D1B091E5239E8D7F0083A999 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +305,7 @@
 			};
 			name = Debug;
 		};
-		D1B091BC239E829E0083A999 /* Release */ = {
+		D1B091E6239E8D7F0083A999 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -350,7 +362,7 @@
 			};
 			name = Release;
 		};
-		D1B091BE239E829E0083A999 /* Debug */ = {
+		D1B091E8239E8D7F0083A999 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -376,7 +388,7 @@
 			};
 			name = Debug;
 		};
-		D1B091BF239E829E0083A999 /* Release */ = {
+		D1B091E9239E8D7F0083A999 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -401,7 +413,7 @@
 			};
 			name = Release;
 		};
-		D1B091C1239E829E0083A999 /* Debug */ = {
+		D1B091EB239E8D7F0083A999 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -420,7 +432,7 @@
 			};
 			name = Debug;
 		};
-		D1B091C2239E829E0083A999 /* Release */ = {
+		D1B091EC239E8D7F0083A999 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -442,34 +454,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1B091A3239E829E0083A999 /* Build configuration list for PBXProject "JSONQuery" */ = {
+		D1B091CD239E8D7E0083A999 /* Build configuration list for PBXProject "JSONQuery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1B091BB239E829E0083A999 /* Debug */,
-				D1B091BC239E829E0083A999 /* Release */,
+				D1B091E5239E8D7F0083A999 /* Debug */,
+				D1B091E6239E8D7F0083A999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1B091BD239E829E0083A999 /* Build configuration list for PBXNativeTarget "JSONQuery" */ = {
+		D1B091E7239E8D7F0083A999 /* Build configuration list for PBXNativeTarget "JSONQuery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1B091BE239E829E0083A999 /* Debug */,
-				D1B091BF239E829E0083A999 /* Release */,
+				D1B091E8239E8D7F0083A999 /* Debug */,
+				D1B091E9239E8D7F0083A999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1B091C0239E829E0083A999 /* Build configuration list for PBXNativeTarget "JSONQueryTests" */ = {
+		D1B091EA239E8D7F0083A999 /* Build configuration list for PBXNativeTarget "JSONQueryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1B091C1239E829E0083A999 /* Debug */,
-				D1B091C2239E829E0083A999 /* Release */,
+				D1B091EB239E8D7F0083A999 /* Debug */,
+				D1B091EC239E8D7F0083A999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D1B091A0239E829E0083A999 /* Project object */;
+	rootObject = D1B091CA239E8D7E0083A999 /* Project object */;
 }

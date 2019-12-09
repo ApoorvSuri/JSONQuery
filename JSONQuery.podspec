@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.platform = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '13.0'
 s.name = "JSONQuery"
 s.summary = "JSONQuery is built on top of URLSession Class for making HTTP Calls"
 s.requires_arc = true
@@ -15,8 +15,6 @@ s.author = { "Apoorv" => "apoorvsuri2012@gmail.com" }
 s.homepage = "https://github.com/ApoorvSuri/JSONQuery"
 
 s.source = { :git => "https://github.com/ApoorvSuri/JSONQuery.git", :tag => "#{s.version}"}
-
-s.framework = "UIKit"
 
 s.source_files = "JSONQuery/**/*.{swift}"
 
